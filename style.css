@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --cor-de-fundo: #171717;
+    --fonte-principal: 'Segoe-UI', sans-serif;
+    --cor-fonte: rgba(255, 255, 255, 0.877);
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    color: var(--cor-fonte);
+}
+
+div.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+    gap: 50px;
+}
+
+.me {
+    position: relative;
+    text-align: center;
+}
+
+.me h2 {
+    padding: 10px 0px;
+    font-weight: 600;
+}
+
+.me p {
+    padding-bottom: 10px;
+}
+
+.me-links {
+    border-top: 1px solid rgba(255, 255, 255, 0.199);
+    padding-top: 10px;
+    display: flex;
+}
+
+.profile-picture {
+    width: 130px;
+    border-radius: 50%;
+}
+
+.me-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.me-links > a {
+    background-image: url(imagens/github-logo.png);
+}
+
+.me-links-github img {
+    width: 25px;
+}
+
+.about-me h1 {
+    padding-bottom: 20px;
+}
+
+.about-me {
+    max-width: 700px;
+    text-align: justify;
+}
